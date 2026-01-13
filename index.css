@@ -95,10 +95,11 @@ body {
 
 #about-description {
   font-size: 16px;
-  max-width: 420px;
+  max-width: 620px;
   line-height: 1.6;
   opacity: 0.85;
   margin-top: 10px;
+  text-align: justify;
 }
 
 #about-section-left {
