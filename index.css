@@ -114,11 +114,38 @@ body {
 }
 
 #about-heading-span {
-  display: inline-block;
+  display: block;
   font-size: 60px;
-  width: 900px;
+  width: 0;
+  line-height: 1.2;
+  height: 72px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #fff;
+  animation: typing 5s steps(24, end) infinite, blink 0.75s step-end infinite;
 }
 
+@keyframes typing {
+  0%,
+  10% {
+    width: 0;
+  }
+  70%,
+  100% {
+    width: 900px;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
 #about-section-right {
   width: 600px;
   height: 600px;
